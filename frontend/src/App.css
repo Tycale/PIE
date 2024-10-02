@@ -1,0 +1,233 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.extracted-data {
+  background-color: #2c3e50;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 800px;
+  margin: 10px auto 30px;
+  color: #ecf0f1;
+}
+
+.extracted-data h2 {
+  color: #3498db;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.extracted-data-field {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.extracted-data-label {
+  display: inline-block;
+  width: 130px;
+  text-align: left;
+  font-weight: bold;
+  color: #3498db;
+  font-size: 16px;
+}
+
+.extracted-data-value {
+  width: calc(100% - 170px);
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 4px;
+  border: 1px solid #34495e;
+  font-size: 16px;
+  background-color: #34495e;
+  color: #ecf0f1;
+  box-sizing: border-box;
+}
+
+.editable-field-input {
+  width: calc(100% - 170px);
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 4px;
+  border: 1px solid #3498db;
+  font-size: 16px;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  box-sizing: border-box;
+}
+
+.extracted-data-field {
+  margin-bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+}
+
+.extracted-data-label {
+  display: inline-block;
+  width: 130px;
+  text-align: left;
+  font-weight: bold;
+  color: #3498db;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.editable-field {
+  flex-grow: 1;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.editable-field-value {
+  word-break: break-word;
+  line-height: 1.4;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.editable-field-input {
+  flex-grow: 1;
+  background-color: #34495e;
+  color: #ecf0f1;
+  border: 1px solid #3498db;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.preview-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.preview-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.preview-image {
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.fullscreen-popup {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border: 2px solid #007bff;
+}
+
+.fullscreen-popup-header {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  background: linear-gradient(to right, #f0f0f0 50%, transparent 50%);
+  background-size: 14px 30px;
+  border-bottom: 1px solid #007bff;
+  padding: 10px 0;
+}
+
+.fullscreen-popup-title {
+  display: flex;
+  align-items: center;
+  cursor: move;
+}
+
+.fullscreen-popup-title h3 {
+  margin: 0;
+}
+
+.fullscreen-popup-close {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.fullscreen-popup-field {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.qr-code-container {
+  margin-bottom: 20px;
+}
+
+.qr-code {
+  background-color: white;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 10px;
+}
+.fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.fullscreen-pdf,
+.fullscreen-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.app-title {
+  font-size: 2.5em;
+  color: #007bff;
+  margin-bottom: 40px;
+}
+
+.app-description {
+  font-size: 0.8em;
+  max-width: 600px;
+  margin: 0 auto 50px;
+  text-align: center;
+  line-height: 1.6;
+  color: #a0a0a0;
+}
