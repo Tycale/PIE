@@ -127,7 +127,7 @@ async def extract(file: UploadFile = File(...)):
     client = OpenAI(api_key=api_key)
 
     # Define the model version
-    MODEL_VERSION = "gpt-4o-2024-08-06"
+    MODEL_VERSION = "gpt-4o-2024-11-20"
 
     try:
         response = client.chat.completions.create(
